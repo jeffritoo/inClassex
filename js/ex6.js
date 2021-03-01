@@ -1,20 +1,9 @@
 console.log("Jeffry's Output from Tutorial 4 Example 6");
 
-let hours = Number(prompt("Hours:"))
+const cobElement = document.createElement("li");
 
-let minutes = Number(prompt("Minutes:"))
+cobElement.id = "cob "
 
-let seconds = Number(prompt("Seconds:"))
+cobElement.textContent = "<a href = https://www.csulb.edu/college-of-business> College of Business </a>"
 
-console.log(hours+" Hours "+minutes+" Minutes "+seconds+" Seconds" )
-
-if(seconds == 60){
-    newMin = minutes++;
-    newSec = "00"
-}
-
-if(minutes == 60){
-    newHours = hours++;
-}
-
-console.log(newHours,newMin,newSec)
+document.getElementById("links").insertBefore(cobElement,document.getElementById("is"));

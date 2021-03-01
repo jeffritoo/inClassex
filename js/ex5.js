@@ -1,8 +1,30 @@
 console.log("Jeffry's Output from Tutorial 4 Example 5");
 
-let multiple = Number(prompt("Enter your desired multiple:"))
+const bodyElements = Array.from(document.getElementsByTagName("p"));
 
-for(let i = 0; i <11; i++){
-    document.write(multiple * i);
-    console.log(multiple * i);
+var pListitem = bodyElements.forEach(element => {
+    console.log(element);
+});
+
+
+
+
+//pListitem.style.fontWeight="bold";
+
+
+
+
+/*
+function highlight()
+{
+    for(var i=0; i<pListitem.length; i++)
+    {
+        pListitem[i].style.color = "yellow";
+    }
 }
+*/
+
+//console.log(highlight(pListitem));
+
+
+
