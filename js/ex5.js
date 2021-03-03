@@ -16,10 +16,23 @@ paraOne.style.fontWeight="bold";
 
 */
 
-
-
 const bodyElements = Array.from(document.getElementsByTagName("p"));
 
+for(i=0; i < bodyElements.length; i++){
+
+    const pTags = bodyElements[i];
+
+    pTags.style.backgroundColor = "rgb(255,255,0)";
+
+    pTags.style.fontWeight = "bold";
+
+}
+
+
+
+
+
+/*
 var pListitem = bodyElements.forEach(element => {
     console.log(element);
 });

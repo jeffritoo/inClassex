@@ -7,6 +7,7 @@ var tblBody = document.createElement('tbody')
 table.appendChild(tblBody);
 
 for(i=1; i<13; i++){
+  
   var row = document.createElement("tr");
 
   var data = document.createElement("td");
