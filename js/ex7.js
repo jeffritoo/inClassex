@@ -15,6 +15,31 @@ const words = [{
 
 var descList = document.createElement("dl");
 
+//loop to add terms and definitions
+
+words.forEach(dl =>{
+  //Create dt and dd
+  const dtElement = document.createElement("dt");
+  const ddElement = document.createElement("dd");
+
+  dtElement.textContent = dl.term;
+  ddElement.textContent = dl.definition;
+
+  dtElement.style.fontWeight = "bold";
+
+  // add them to the list
+
+  descList.appendChild(dtElement);
+  descList.appendChild(ddElement);
+
+});
+
+//add dl to HTML in DIV tag
+
+const divElement = document.getElementById('content');
+
+divElement.appendChild(descList);
+
 
 
 
